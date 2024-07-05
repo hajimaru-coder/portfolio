@@ -1,0 +1,25 @@
+@use "../global" as g;
+
+.p-to-top {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: min(calc(50 / 375 * 100%), 50px);
+  opacity: 0; // 見えなくする
+  visibility: hidden; // 見えなくする
+  transition: opacity 0.3s, visibility 0.3s;
+
+  @include g.mq("pc") {
+    right: 20px;
+    bottom: 20px;
+    width: 76px;
+  }
+
+  img {
+  }
+
+  &.is-show {
+    opacity: 1;
+    visibility: visible;
+  }
+}

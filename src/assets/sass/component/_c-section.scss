@@ -1,0 +1,45 @@
+@use "../global" as g;
+
+.c-section {
+  padding-block: 50px;
+}
+.c-section__inner {
+  padding-inline: 15px;
+  margin: 0 auto;
+  max-width: 600px;
+
+  @include g.mq("pc") {
+    max-width: 1000px;
+  }
+}
+
+.c-section__head {
+  display: flex;
+  flex-direction: column;
+}
+
+.c-section__head-main {
+  font-size: 36px;
+  font-family: g.$ff-title;
+  letter-spacing: 0.1em;
+
+  @include g.mq("pc") {
+    font-size: 50px;
+  }
+}
+
+.c-section__head-sub {
+  font-size: 12px;
+
+  @include g.mq("pc") {
+    font-size: 16px;
+  }
+}
+
+.c-section__lead-text {
+  margin-top: 30px;
+
+  @include g.mq("pc") {
+    font-size: 20px;
+  }
+}

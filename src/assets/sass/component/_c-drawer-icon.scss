@@ -1,0 +1,50 @@
+@use "../global" as g;
+
+.c-drawer-icon {
+  width: 36px;
+  height: 21px;
+  position: relative;
+  z-index: 51;
+
+  &.is-checked {
+    .c-drawer-icon__bar {
+      transition: transform 0.3s linear, top 0.3s linear;
+
+      &:nth-last-of-type(1) {
+        transform: rotate(-40deg);
+        top: 8px;
+      }
+
+      &:nth-last-of-type(2) {
+        display: none;
+      }
+
+      &:nth-last-of-type(3) {
+        transform: rotate(40deg);
+        top: 8px;
+      }
+    }
+  }
+}
+
+.c-drawer-icon__bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 36px;
+  height: 4px;
+  border-radius: 6px;
+  background: g.$text-white;
+  transition: transform 0.3s linear, top 0.3s linear;
+
+  &:nth-last-of-type(1) {
+  }
+
+  &:nth-last-of-type(2) {
+    top: 10px;
+  }
+
+  &:nth-last-of-type(3) {
+    top: 20px;
+  }
+}

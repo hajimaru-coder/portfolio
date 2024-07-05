@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="widivh=device-widivh, initial-scale=1.0" />
+    <title>Hajimaru's portfolio</title>
+
+    <!-- ファビコン -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+
+    <!-- このサイトの説明 -->
+    <meta
+      name="description"
+      content="WEBコーダーのはじ丸のポートフォリオです。Shopify構築、「Web制作を頼みたい」「既存のWebサイトの修正・改善したい」などぜひ、お気軽にご相談ください。" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet" />
+
+    <!-- リセットCSS -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- メインCSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header id="header" class="l-header">
+      <div class="l-header__inner js-in-view fade-in-up">
+        <h1 class="l-header-logo">
+          <a href="#">Hajimaru's<br />Portfolio</a>
+        </h1>
+        <nav class="c-header-nav">
+          <a href="#service" class="c-header-nav__link">Service -</a>
+          <a href="#works" class="c-header-nav__link">Works -</a>
+          <a href="#about" class="c-header-nav__link">About -</a>
+          <a href="#skill" class="c-header-nav__link">skills -</a>
+          <a href="#flow" class="c-header-nav__link">Work flow -</a>
+          <a href="#price" class="c-header-nav__link">Price -</a>
+          <a href="#contact" class="c-header-nav__link">Contact -</a>
+          <a href="https://twitter.com/hajimaru_web" class="c-header-nav__link" target="_blank"
+            ><img src="./assets/img/sp/twitter.png" alt="twitter-icon"
+          /></a>
+        </nav>
+        <button id="js-drawer-icon" class="c-header-nav__none c-drawer-icon">
+          <span class="c-drawer-icon__bar"></span>
+          <span class="c-drawer-icon__bar"></span>
+          <span class="c-drawer-icon__bar"></span>
+        </button>
+      </div>
+    </header>
+    <!-- /header -->
+
+    <div id="js-drawer-content" class="c-drawer-content">
+      <nav class="c-drawer-content__menu js-in-view fade-in-up">
+        <a href="#service" class="c-drawer-content__link">Service -</a>
+        <a href="#works" class="c-drawer-content__link">Works -</a>
+        <a href="#about" class="c-drawer-content__link">About -</a>
+        <a href="#skill" class="c-drawer-content__link">skills -</a>
+        <a href="#flow" class="c-drawer-content__link">Work flow -</a>
+        <a href="#price" class="c-drawer-content__link">Price -</a>
+        <a href="#contact" class="c-drawer-content__link">Contact -</a>
+        <a href="https://twitter.com/hajimaru_web" class="c-drawer-content__link" target="_blank"
+          ><img src="./assets/img/sp/twitter.png" alt="twitter-icon"
+        /></a>
+      </nav>
+    </div>
+    <!-- /.drawer-content -->
+
+    <!-- fv -->
+    <section class="p-fv js-in-view fade-in-up">
+      <picture class="p-fv__img">
+        <source media="(min-width: 768px)" srcset="./assets/img/pc/fv_img.png" />
+        <img src="./assets/img/sp/fv_img.png" alt="ファーストビュー" />
+      </picture>
+      <div class="p-fv__contents">
+        <h1 class="p-fv__heading js-in-view fade-in-up">
+          <span class="p-fv__heading-main">Web Coder -</span>
+          <span class="p-fv__heading-sub"
+            >ご覧いただきありがとうございます。<br />WEBコーダーをしているはじ丸と申します。</span
+          >
+        </h1>
+      </div>
+    </section>
+    <!-- /.fv -->
+
+    <!-- service -->
+    <section id="service" class="c-section p-service js-in-view fade-in-up">
+      <div class="c-section__inner inner">
+        <h2 class="c-section__head js-in-view fade-in-up">
+          <span class="c-section__head-main">Service -</span>
+          <span class="c-section__head-sub">提供サービス</span>
+        </h2>
+        <p class="c-section__lead-text">
+          行っているサービス内容です。「Web制作を頼みたい」「既存のWebサイトを修正・改善したい」など、是非、お気軽にご相談ください。
+        </p>
+        <div class="p-service__contents">
+          <ul class="p-service__list">
+            <li class="p-service__item js-in-view fade-in-up">
+              <div class="p-service__item-img">
+                <img src="./assets/img/sp/service-cading-img.png" alt="パソコンのアイコン" />
+              </div>
+              <h3 class="p-service__item-name">ホームページ制作</h3>
+              <p class="p-service__item-text">
+                レスポンシブに対応したLP・ホームページのコーディングに対応しております。
+              </p>
+            </li>
+            <li class="p-service__item js-in-view fade-in-up">
+              <div class="p-service__item-img">
+                <img src="./assets/img/sp/service-shopify-img.png" alt="Shopifyのアイコン" />
+              </div>
+              <h3 class="p-service__item-name">Shopify構築</h3>
+              <p class="p-service__item-text">
+                ShopifyをしようしたECサイト構築に対応しております。liquidでのカスタマイズも可能です。
+              </p>
+            </li>
+            <li class="p-service__item js-in-view fade-in-up">
+              <div class="p-service__item-img">
+                <img src="./assets/img/sp/service-wordpress-img.png" alt="WordPressのアイコン" />
+              </div>
+              <h3 class="p-service__item-name">WordPress構築</h3>
+              <p class="p-service__item-text">
+                WordPressのオリジナルテーマの構築に対応しております。オリジナルテーマ以外の構築の可能です。
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- /service -->
+
+    <!-- works -->
+    <section id="works" class="c-section p-works">
+      <div class="c-section__inner inner">
+        <h2 class="c-section__head js-in-view fade-in-up">
+          <span class="c-section__head-main">Works -</span>
+          <span class="c-section__head-sub">実績紹介</span>
+        </h2>
+        <p class="c-section__lead-text">
+          これまで制作したWebサイトとECサイトです。また、当サイトも自ら制作していますので実績の一つとして御覧ください。
+        </p>
+        <div class="p-works__slider js-in-view fade-in-up">
+          <div id="js-works-swiper" class="swiper p-works__swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide p-works__slide js-modal-open" data-target="p-works-modal1">
+                <div class="p-works-item">
+                  <div class="p-works-item__img">
+                    <img src="./assets/img/sp/works-first_class.png" alt="パーソナルジムのサイト" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide p-works__slide js-modal-open" data-target="p-works-modal2">
+                <div class="p-works-item">
+                  <div class="p-works-item__img">
+                    <img src="./assets/img/sp/works-open-cafe.png" alt="架空カフェのサイト" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide p-works__slide js-modal-open" data-target="p-works-modal3">
+                <div class="p-works-item">
+                  <div class="p-works-item__img">
+                    <img src="./assets/img/sp/works-sobolon.png" alt="架空のアクセサリーサイト" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide p-works__slide js-modal-open" data-target="p-works-modal4">
+                <div class="p-works-item">
+                  <div class="p-works-item__img">
+                    <img
+                      src="./assets/img/sp/works-sample_corp.png"
+                      alt="架空のコーポレートサイト" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide p-works__slide js-modal-open" data-target="p-works-modal5">
+                <div class="p-works-item">
+                  <div class="p-works-item__img">
+                    <img src="./assets/img/sp/works-daily_trail.png" alt="架空のシューズサイト" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide p-works__slide js-modal-open" data-target="p-works-modal6">
+                <div class="p-works-item">
+                  <div class="p-works-item__img">
+                    <img
+                      src="./assets/img/sp/works-patisserie_de _daytra.png"
+                      alt="架空のスイーツサイト" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="js-works-pagination" class="swiper-pagination p-works-pagination"></div>
+          <div id="js-works-prev" class="swiper-button-prev p-works-prev"></div>
+          <div id="js-works-next" class="swiper-button-next p-works-next"></div>
+        </div>
+        <!-- <div class="p-works-button js-in-view fade-in-up">
+          <a href="" class="c-button">view more</a>
+        </div> -->
+      </div>
+    </section>
+    <!-- /.works -->
+
+    <!-- modal -->
+    <dialog id="p-works-modal1" class="p-works-modal">
+      <div class="p-works-modal__img">
+        <img src="./assets/img/sp/works-first_class.png" alt="パーソナルジムのサイト" />
+      </div>
+      <div class="p-works-modal__body">
+        <div class="p-works-modal__title">パーソナルジムサイト<br />「FIRST CLASS」</div>
+        <div class="p-works-modal__contents">
+          <div class="p-works-modal__text">
+            個人でパーソナルジムを開業するお客様のサイトコーディングを担当しました。
+          </div>
+          <div class="p-works-modal__skill">
+            <span class="p-works-modal__skill-title">使用スキル</span><br />HTML / CSS / Sass(SCSS)
+            / JavaScript / jQuery
+          </div>
+        </div>
+        <div class="p-works-modal__buttons">
+          <div class="p-works-modal__url c-button">
+            <a href="https://first-class-fujisaki.com/" target="_blank" rel="noopener noreferrer"
+              >サイトを見る</a
+            >
+          </div>
+          <button class="p-works-modal__close js-modal-close c-button">閉じる</button>
+        </div>
+      </div>
+    </dialog>
+    <dialog id="p-works-modal2" class="p-works-modal">
+      <div class="p-works-modal__img">
+        <img src="./assets/img/sp/works-open-cafe.png" alt="架空カフェのサイト" />
+      </div>
+      <div class="p-works-modal__body">
+        <div class="p-works-modal__title">架空カフェのサイト<br />「Open Cafe」</div>
+        <div class="p-works-modal__contents">
+          <div class="p-works-modal__text">
+            オンラインスクールの課題で、WordPressを使用してFLOCSSでコーディングをしました。
+          </div>
+          <div class="p-works-modal__skill">
+            <span class="p-works-modal__skill-title">使用スキル</span><br />HTML / CSS / Sass(SCSS)
+            / JavaScript / jQuery / Gulp / WordPress / PHP / FLOCSS
+          </div>
+          <div class="p-works-modal__pass">
+            <span class="p-works-modal__pass-s">サイト閲覧は以下ログイン認証が必要になります</span
+            ><br />ログインID: demo<br />パスワード: demo
+          </div>
+        </div>
+        <div class="p-works-modal__buttons">
+          <div class="p-works-modal__url c-button">
+            <a href="https://open-cafe.harukana2022.com/" target="_blank" rel="noopener noreferrer"
+              >サイトを見る</a
+            >
+          </div>
+          <button class="p-works-modal__close js-modal-close c-button">閉じる</button>
+        </div>
+      </div>
+    </dialog>
+    <dialog id="p-works-modal3" class="p-works-modal">
+      <div class="p-works-modal__img">
+        <img src="./assets/img/sp/works-sobolon.png" alt="架空のアクセサリーサイト" />
+      </div>
+      <div class="p-works-modal__body">
+        <div class="p-works-modal__title">架空アクセサリーブランドサイト<br />「sobolon」</div>
+        <div class="p-works-modal__contents">
+          <div class="p-works-modal__text">
+            オンラインスクールの課題で、架空アクセサリーブランドサイトのコーディングをしました。
+          </div>
+          <div class="p-works-modal__skill">
+            <span class="p-works-modal__skill-title">使用スキル</span><br />HTML / CSS / Sass(SCSS)
+            / JavaScript / jQuery
+          </div>
+          <div class="p-works-modal__pass">
+            <span class="p-works-modal__pass-s">サイト閲覧は以下ログイン認証が必要になります</span
+            ><br />ログインID: demo<br />パスワード: demo
+          </div>
+        </div>
+        <div class="p-works-modal__buttons">
+          <div class="p-works-modal__url c-button">
+            <a
+              href="https://general-review.harukana2022.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >サイトを見る</a
+            >
+          </div>
+          <button class="p-works-modal__close js-modal-close c-button">閉じる</button>
+        </div>
+      </div>
+    </dialog>
+    <dialog id="p-works-modal4" class="p-works-modal">
+      <div class="p-works-modal__img">
+        <img src="./assets/img/sp/works-sample_corp.png" alt="架空のコーポレートサイト" />
+      </div>
+      <div class="p-works-modal__body">
+        <div class="p-works-modal__title">架空コーポレートサイト<br />「Sample Corp.」</div>
+        <div class="p-works-modal__contents">
+          <div class="p-works-modal__text">
+            オンラインスクールの課題で、架空コーポレートサイトのコーディングをしました。
+          </div>
+          <div class="p-works-modal__skill">
+            <span class="p-works-modal__skill-title">使用スキル</span><br />HTML / CSS / Sass(SCSS)
+            / JavaScript / jQuery
+          </div>
+          <div class="p-works-modal__pass">
+            <span class="p-works-modal__pass-s">サイト閲覧は以下ログイン認証が必要になります</span
+            ><br />ログインID: demo<br />パスワード: demo
+          </div>
+        </div>
+        <div class="p-works-modal__buttons">
+          <div class="p-works-modal__url c-button">
+            <a href="https://kadai.harukana2022.com/" target="_blank" rel="noopener noreferrer"
+              >サイトを見る</a
+            >
+          </div>
+          <button class="p-works-modal__close js-modal-close c-button">閉じる</button>
+        </div>
+      </div>
+    </dialog>
+    <dialog id="p-works-modal5" class="p-works-modal">
+      <div class="p-works-modal__img">
+        <img src="./assets/img/sp/works-daily_trail.png" alt="架空のシューズサイト" />
+      </div>
+      <div class="p-works-modal__body">
+        <div class="p-works-modal__title">架空シューズサイト<br />「DAILY TRAIL」</div>
+        <div class="p-works-modal__contents">
+          <div class="p-works-modal__text">
+            オンラインスクールの課題で、Shopifyを使用して構築をしました。
+          </div>
+          <div class="p-works-modal__skill">
+            <span class="p-works-modal__skill-title">使用スキル</span><br />Shopify / liquid
+          </div>
+          <div class="p-works-modal__pass">
+            <span class="p-works-modal__pass-s">サイト閲覧は以下パスワード認証が必要になります</span
+            ><br />パスワード: demo
+          </div>
+        </div>
+        <div class="p-works-modal__buttons">
+          <div class="p-works-modal__url c-button">
+            <a
+              href="https://dailytrial-hajimaru-teststore.myshopify.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >サイトを見る</a
+            >
+          </div>
+          <button class="p-works-modal__close js-modal-close c-button">閉じる</button>
+        </div>
+      </div>
+    </dialog>
+    <dialog id="p-works-modal6" class="p-works-modal">
+      <div class="p-works-modal__img">
+        <img src="./assets/img/sp/works-patisserie_de _daytra.png" alt="架空のスイーツサイト" />
+      </div>
+      <div class="p-works-modal__body">
+        <div class="p-works-modal__title">架空スイーツサイト<br />「Patisserie_de _Daytra」</div>
+        <div class="p-works-modal__contents">
+          <div class="p-works-modal__text">
+            オンラインスクールの課題で、Shopifyを使用して構築をしました。
+          </div>
+          <div class="p-works-modal__skill">
+            <span class="p-works-modal__skill-title">使用スキル</span><br />Shopify / liquid
+          </div>
+          <div class="p-works-modal__pass">
+            <span class="p-works-modal__pass-s">サイト閲覧は以下パスワード認証が必要になります</span
+            ><br />パスワード: demo
+          </div>
+        </div>
+        <div class="p-works-modal__buttons">
+          <div class="p-works-modal__url c-button">
+            <a
+              href="https://patisserie-de-daytra-hajimaru.myshopify.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >サイトを見る</a
+            >
+          </div>
+          <button class="p-works-modal__close js-modal-close c-button">閉じる</button>
+        </div>
+      </div>
+    </dialog>
+    <!-- /.modal -->
+
+    <!-- about -->
+    <section id="about" class="c-section p-about">
+      <div class="c-section__inner">
+        <h2 class="c-section__head js-in-view fade-in-up">
+          <span class="c-section__head-main">About -</span>
+          <span class="c-section__head-sub">私について</span>
+        </h2>
+        <div class="p-about__container">
+          <div class="p-about__img js-in-view fade-in-up">
+            <img src="./assets/img/sp/about-img.png" alt="プロフィールアイコン" />
+          </div>
+          <div class="p-about__text-contents js-in-view fade-in-up">
+            <p class="p-about__text">
+              福岡を拠点に、Webコーダーとして活動しています。<br />ホームページ制作やLPのコーディング、Shopifyを用いたECサイトの構築を行っています。<br />専門学校を卒業後、消防士として勤務していました。<br />前職で培った継続力や決断力、コミュニケーションスキルを活かし、お客様に喜んでいただけるサイト作りを心がけています。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /about -->
+
+    <!-- skill -->
+    <div id="skill" class="c-section p-skill">
+      <div class="c-section__inner">
+        <h2 class="c-section__head js-in-view fade-in-up">
+          <span class="c-section__head-main">Skill -</span>
+          <span class="c-section__head-sub">スキルについて</span>
+        </h2>
+        <div class="p-skill__container js-in-view fade-in-up">
+          <div class="p-skill__items">
+            <div class="p-skill-item">
+              <div class="p-skill-item__img">
+                <img src="./assets/img/sp/p-skill-item__img1.png" alt="HTMLのロゴ" />
+              </div>
+              <div class="p-skill-item__text">HTML</div>
+            </div>
+            <div class="p-skill-item">
+              <div class="p-skill-item__img">
+                <img src="./assets/img/sp/p-skill-item__img2.png" alt="CSSのロゴ" />
+              </div>
+              <div class="p-skill-item__text">CSS</div>
+            </div>
+            <div class="p-skill-item">
+              <div class="p-skill-item__img">
+                <img src="./assets/img/sp/p-skill-item__img3.png" alt="Sassのロゴ" />
+              </div>
+              <div class="p-skill-item__text">Sass(SCSS)</div>
+            </div>
+            <div class="p-skill-item">
+              <div class="p-skill-item__img">
+                <img src="./assets/img/sp/p-skill-item__img4.png" alt="JavaScriptのロゴ" />
+              </div>
+              <div class="p-skill-item__text">JavaScript</div>
+            </div>
+            <div class="p-skill-item">
+              <div class="p-skill-item__img">
+                <img src="./assets/img/sp/p-skill-item__img5.png" alt="jQueryのロゴ" />
+              </div>
+              <div class="p-skill-item__text">jQuery</div>
+            </div>
+            <div class="p-skill-item">
+              <div class="p-skill-item__img">
+                <img src="./assets/img/sp/p-skill-item__img6.png" alt="PHPのロゴ" />
+              </div>
+              <div class="p-skill-item__text">PHP</div>
+            </div>
+            <div class="p-skill-item">
+              <div class="p-skill-item__img">
+                <img src="./assets/img/sp/p-skill-item__img7.png" alt="WordPressのロゴ" />
+              </div>
+              <div class="p-skill-item__text">WordPress</div>
+            </div>
+            <div class="p-skill-item">
+              <div class="p-skill-item__img">
+                <img src="./assets/img/sp/p-skill-item__img8.png" alt="Gulpのロゴ" />
+              </div>
+              <div class="p-skill-item__text">Gulp</div>
+            </div>
+            <div class="p-skill-item">
+              <div class="p-skill-item__img">
+                <img src="./assets/img/sp/p-skill-item__img9.png" alt="Shopifyのロゴ" />
+              </div>
+              <div class="p-skill-item__text">Shopify</div>
+            </div>
+            <div class="p-skill-item">
+              <div class="p-skill-item__img">
+                <img src="./assets/img/sp/p-skill-item__img10.png" alt="liquidのロゴ" />
+              </div>
+              <div class="p-skill-item__text">liquid</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ./skill -->
+
+    <!-- flow -->
+    <section id="flow" class="c-section p-flow">
+      <div class="c-section__inner">
+        <h2 class="c-section__head js-in-view fade-in-up">
+          <span class="c-section__head-main">Work Flow -</span>
+          <span class="c-section__head-sub">制作の流れ</span>
+        </h2>
+        <p class="c-section__lead-text">
+          ご相談〜納品までの大まかな流れです。状況に応じて柔軟に対応いたします。
+        </p>
+        <div class="c-section__contents">
+          <ol class="p-flow__list">
+            <li class="p-flow__item js-in-view fade-in-up">
+              <p class="p-flow__item-num">1</p>
+              <div class="p-flow__item-img"><img src="./assets/img/sp/flow-img1.png" alt="" /></div>
+              <h3 class="p-flow__item-name">ご相談・お見積り</h3>
+              <p class="p-flow__item-text">
+                要件や納期、予算などお気軽にご相談ください。対応内容に応じてお見積りをお送りいたします。
+              </p>
+            </li>
+            <li class="p-flow__item js-in-view fade-in-up">
+              <p class="p-flow__item-num">2</p>
+              <div class="p-flow__item-img"><img src="./assets/img/sp/flow-img2.png" alt="" /></div>
+              <h3 class="p-flow__item-name">コーディング</h3>
+              <p class="p-flow__item-text">
+                デザインカンプを元にコーディングを行います。コーディング後は品質チェックを行い調整します。
+              </p>
+            </li>
+            <li class="p-flow__item js-in-view fade-in-up">
+              <p class="p-flow__item-num">3</p>
+              <div class="p-flow__item-img"><img src="./assets/img/sp/flow-img3.png" alt="" /></div>
+              <h3 class="p-flow__item-name">確認</h3>
+              <p class="p-flow__item-text">
+                お客様にコーディングしたサイトをご確認頂きます。不足部分の修正と対応を行います。
+              </p>
+            </li>
+            <li class="p-flow__item js-in-view fade-in-up">
+              <p class="p-flow__item-num">4</p>
+              <div class="p-flow__item-img"><img src="./assets/img/sp/flow-img4.png" alt="" /></div>
+              <h3 class="p-flow__item-name">納品</h3>
+              <p class="p-flow__item-text">
+                コーディング後のファイル一式を納品いたします。<br />本番サーバーへのアップロードも対応可能です。
+              </p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <!-- /flow -->
+
+    <!-- price -->
+    <section id="price" class="c-section p-price">
+      <div class="c-section__inner">
+        <h2 class="c-section__head js-in-view fade-in-up">
+          <span class="c-section__head-main">Price -</span>
+          <span class="c-section__head-sub">料金</span>
+        </h2>
+        <p class="p-price__text">
+          金額は目安となります。詳細なお見積りはお問い合わせください。ご予算に合わせたご相談も承ります。
+        </p>
+        <div class="p-price-box">
+          <ul class="p-price-items js-in-view fade-in-up">
+            <li class="p-price-item">
+              <div class="p-price-item__text">LP制作</div>
+              <div class="p-price-item__price">30,000円〜</div>
+            </li>
+            <li class="p-price-item">
+              <div class="p-price-item__text">TOPページ(5,000px)</div>
+              <div class="p-price-item__price">20,000円〜</div>
+            </li>
+            <li class="p-price-item">
+              <div class="p-price-item__text">下層ページ</div>
+              <div class="p-price-item__price">1P 10,000円〜</div>
+            </li>
+            <li class="p-price-item">
+              <div class="p-price-item__text">5000px以上</div>
+              <div class="p-price-item__price">追加料金(応相談)</div>
+            </li>
+            <li class="p-price-item">
+              <div class="p-price-item__text">お問い合わせフォーム</div>
+              <div class="p-price-item__price">10,000円〜</div>
+            </li>
+            <li class="p-price-item">
+              <div class="p-price-item__text">WordPress導入</div>
+              <div class="p-price-item__price">20,000円〜</div>
+            </li>
+            <li class="p-price-item">
+              <div class="p-price-item__text">Shopify構築</div>
+              <div class="p-price-item__price">100,000円〜</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- /price -->
+
+    <!-- contact -->
+    <section id="contact" class="c-section p-contact">
+      <div class="c-section__inner">
+        <h2 class="c-section__head js-in-view fade-in-up">
+          <span class="c-section__head-main">Contact -</span>
+          <span class="c-section__head-sub">お問い合わせ</span>
+        </h2>
+        <span class="p-contact__head-text"
+          >Web制作やEC構築について、お気軽にお問い合わせください</span
+        >
+        <form
+          id="js-form"
+          class="p-contact-form js-in-view fade-in-up"
+          action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdT1ILWudWCVUlzwYgK_U2GpS9q9K5IKQ3_qa-Z63kqdE_BHg/formResponse"
+          method="post">
+          <div class="p-contact-form__fields">
+            <div class="p-contact-field">
+              <div class="p-contact-field__head">
+                <div class="p-contact-form__label">お問い合わせ項目</div>
+                <span class="p-contact-form__tag">必須</span>
+              </div>
+              <div class="p-contact-form__item">
+                <div class="p-contact-form__radio">
+                  <label class="p-form-radio">
+                    <input
+                      class="p-form-radio__input"
+                      type="radio"
+                      name="entry.819390945"
+                      value="ホームページの制作について"
+                      required
+                      checked />
+                    <span class="p-form-radio__text">ホームページの制作について</span>
+                  </label>
+                  <label class="p-form-radio">
+                    <input
+                      class="p-form-radio__input"
+                      type="radio"
+                      name="entry.819390945"
+                      value="ホームページの修正について"
+                      required />
+                    <span class="p-form-radio__text">ホームページの修正について</span>
+                  </label>
+                  <label class="p-form-radio">
+                    <input
+                      class="p-form-radio__input"
+                      type="radio"
+                      name="entry.819390945"
+                      value="ホームページの相談について"
+                      required />
+                    <span class="p-form-radio__text">ホームページの相談について</span>
+                  </label>
+                  <label class="p-form-radio">
+                    <input
+                      class="p-form-radio__input"
+                      type="radio"
+                      name="entry.819390945"
+                      value="Shopifyの構築について"
+                      required />
+                    <span class="p-form-radio__text">Shopifyの構築について</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="p-contact-field">
+              <div class="p-contact-field__head">
+                <label for="your-name" class="p-contact-form__label">お名前</label>
+                <span class="p-contact-form__tag">必須</span>
+              </div>
+              <div class="p-contact-form__item">
+                <input
+                  class="p-form-text"
+                  id="your-name"
+                  type="text"
+                  name="entry.398901733"
+                  placeholder="山田  太郎"
+                  required />
+              </div>
+            </div>
+            <div class="p-contact-field">
+              <div class="p-contact-field__head">
+                <label for="your-email" class="p-contact-form__label">メールアドレス</label>
+                <span class="p-contact-form__tag">必須</span>
+              </div>
+              <div class="p-contact-form__item">
+                <input
+                  class="p-form-text"
+                  id="your-email"
+                  type="email"
+                  name="entry.725589320"
+                  placeholder="text@example.com"
+                  required />
+              </div>
+            </div>
+            <div class="p-contact-field">
+              <div class="p-contact-field__head">
+                <label for="your-message" class="p-contact-form__label">お問い合わせ内容</label>
+                <span class="p-contact-form__tag">必須</span>
+              </div>
+              <div class="p-contact-form__item">
+                <textarea
+                  class="p-form-textarea"
+                  id="your-message"
+                  name="entry.906629460"
+                  placeholder="お問い合わせを入力してください"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="p-contact-form__privacy">
+            <div class="p-contact-form__privacy-text">
+              お客様の個人情報の流出・漏洩の防止、その他個人情報の安全管理のために必要かつ適切な措置を講じるものとし、法令などに正当な理由がある場合を除き、お客様の同意なく目的外での利用および第三者への提供は行いません。
+            </div>
+            <label class="p-form-checkbox">
+              <input
+                class="p-form-checkbox__input"
+                type="checkbox"
+                name="entry.1836520771"
+                value="確認しました" />
+              <span class="p-form-checkbox__text">確認しました</span>
+            </label>
+          </div>
+          <div class="p-contact-form__button">
+            <button id="js-submit" class="p-contact-form__submit c-button" type="submit" disabled>
+              送　信
+            </button>
+          </div>
+        </form>
+        <!-- 送信後のテキスト -->
+        <div id="js-success" class="p-contact-message">
+          <p>送信完了しました。ありがとうございました</p>
+        </div>
+        <div id="js-error" class="p-contact-message --error">
+          <p>送信に失敗しました。ページを更新して再度送信してください。</p>
+        </div>
+      </div>
+    </section>
+    <!-- /contact -->
+
+    <!-- footer -->
+    <footer class="p-footer">
+      <small class="p-footer__copy">&copy; Hajimaru's Portfolio All rights reserved.</small>
+    </footer>
+    <!-- /footer -->
+
+    <!-- to-top -->
+    <a href="#" class="p-to-top" id="js-to-top"
+      ><img src="./assets/img/sp/to-top.png" alt="トップに戻るアイコン"
+    /></a>
+    <!-- /.to-top -->
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- main.js -->
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

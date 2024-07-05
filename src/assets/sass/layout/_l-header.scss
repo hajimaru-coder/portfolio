@@ -1,0 +1,44 @@
+@use "../global" as g;
+
+.l-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background: g.$base-dark;
+}
+
+.l-header__inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 15px;
+  height: g.$header-height-sp;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include g.mq("tab") {
+    padding: 10px 30px;
+    height: g.$header-height-pc;
+    max-width: g.$inner-width;
+  }
+
+  @include g.mq("pc") {
+    padding: 20px 40px;
+    height: g.$header-height-pc;
+    max-width: g.$inner-width;
+  }
+}
+
+.l-header-logo {
+  font-size: 18px;
+  display: inline-block;
+  font-weight: bold;
+  color: g.$text-white;
+
+  @include g.mq("pc") {
+    font-size: 24px;
+  }
+}

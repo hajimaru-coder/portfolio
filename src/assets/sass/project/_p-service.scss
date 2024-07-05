@@ -1,0 +1,58 @@
+@use "../global" as g;
+
+.p-service {
+  background: g.$base-light;
+}
+
+.p-service__contents {
+  margin-top: 40px;
+}
+
+.p-service__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @include g.mq("pc") {
+    flex-direction: row;
+  }
+}
+
+.p-service__item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: g.$text-white;
+  width: 100%;
+  border-radius: 10px;
+  margin-inline: auto;
+  padding: 30px 40px;
+  box-shadow: 1px 1px 4px 1px g.$base-dark;
+  max-width: 400px;
+}
+
+.p-service__item-img {
+  text-align: center;
+
+  img {
+    width: 100px;
+  }
+}
+
+.p-service__item-name {
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+
+  @include g.mq("pc") {
+    font-size: 18px;
+  }
+}
+
+.p-service__item-text {
+  font-size: 14px;
+
+  @include g.mq("pc") {
+    font-size: 16px;
+  }
+}

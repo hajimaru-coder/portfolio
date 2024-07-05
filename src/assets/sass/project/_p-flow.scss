@@ -1,0 +1,75 @@
+@use "../global" as g;
+
+.p-flow {
+  background: g.$base-light;
+}
+
+.p-flow__list {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include g.mq("pc") {
+    flex-direction: row;
+    gap: 20px;
+    max-width: 100%;
+  }
+}
+
+.p-flow__item {
+  position: relative;
+  border-radius: 10px;
+  padding: 40px 20px 20px;
+  background: g.$base-light;
+  box-shadow: 1px 1px 4px 1px g.$base-dark;
+
+  @include g.mq("pc") {
+    max-width: 227px;
+    padding: 60px 20px 20px;
+  }
+}
+
+.p-flow__item-num {
+  position: absolute;
+  content: "";
+  top: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  background-color: g.$main-color;
+  color: g.$text-white;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.p-flow__item-img {
+  text-align: center;
+  img {
+    width: 100px;
+  }
+}
+
+.p-flow__item-name {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+
+  @include g.mq("pc") {
+    font-size: 18px;
+  }
+}
+
+.p-flow__item-text {
+  margin-top: 10px;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+}

@@ -1,0 +1,39 @@
+@use "../global" as g;
+
+.c-drawer-content {
+  width: 320px;
+  // width: 100%;
+  height: 100%;
+  background: g.$base-dark;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 50;
+  padding: 130px 40px 40px;
+  transform: translateX(100%);
+  transition: transform 0.3s;
+
+  &.is-checked {
+    transform: translateX(0);
+  }
+}
+
+.c-drawer-content__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 250px;
+  gap: 30px;
+}
+
+.c-drawer-content__link {
+  color: g.$text-white;
+  font-weight: bold;
+
+  img {
+    width: 30px;
+    background: g.$text-white;
+    border-radius: 4px;
+  }
+}

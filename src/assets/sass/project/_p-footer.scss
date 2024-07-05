@@ -1,0 +1,20 @@
+@use "../global" as g;
+
+.p-footer {
+  text-align: center;
+  padding: 10px;
+  background: g.$base-dark;
+
+  @include g.mq("pc") {
+    padding: 18px;
+  }
+}
+
+.p-footer__copy {
+  font-size: 11px;
+  color: g.$text-white;
+
+  @include g.mq("pc") {
+    font-size: 14px;
+  }
+}

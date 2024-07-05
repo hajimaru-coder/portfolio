@@ -1,0 +1,28 @@
+@use "../global" as g;
+
+.c-button {
+  font-weight: 700;
+  letter-spacing: 0.48px;
+  padding: calc(12px - 2px) calc(30px - 2px);
+  display: inline-block;
+  border-radius: 60px;
+  // border: 2px solid currentColor;
+  background: g.$main-color;
+  font-size: 16px;
+  line-height: 1.7;
+  color: g.$text-white;
+  min-width: 180px;
+  text-align: center;
+  transition: transform 0.3s;
+  margin-top: 28px;
+
+  @include g.mq("pc") {
+    padding: calc(22px - 2px) calc(42px - 2px);
+    width: 240px;
+    font-size: 20px;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

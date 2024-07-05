@@ -1,0 +1,62 @@
+@use "../global" as g;
+
+.p-skill {
+  margin-top: 30px;
+}
+
+.p-skill__container {
+  margin-top: 30px;
+  padding: 30px 20px;
+  box-shadow: 1px 1px 4px 1px #4a4a4a;
+  border-radius: 10px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include g.mq("pc") {
+    padding: 80px 30px;
+    max-width: 100%;
+  }
+}
+
+.p-skill__items {
+  display: grid;
+  grid-template-columns: repeat(2, 120px);
+  gap: 20px;
+  justify-content: space-around;
+
+  @include g.mq("pc") {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 50px 20px;
+  }
+}
+
+.p-skill-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+
+  @include g.mq("pc") {
+    flex-direction: column;
+  }
+}
+
+.p-skill-item__img {
+  img {
+    width: 40px;
+    min-width: 40px;
+
+    @include g.mq("pc") {
+      width: 80px;
+    }
+  }
+}
+
+.p-skill-item__text {
+  font-size: 14px;
+
+  @include g.mq("pc") {
+    font-size: 20px;
+  }
+}

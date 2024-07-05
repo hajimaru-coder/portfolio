@@ -1,0 +1,312 @@
+@use "../global" as g;
+
+.p-contact {
+  background: g.$base-light;
+}
+
+.p-contact__head-text {
+  margin-top: 20px;
+  display: inline-block;
+
+  @include g.mq("pc") {
+    margin-top: 40px;
+    font-size: 20px;
+  }
+}
+
+.p-contact-form {
+  background: g.$text-white;
+  padding: 30px 20px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 4px 1px g.$base-dark;
+  margin-top: 20px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include g.mq("pc") {
+    margin-top: 40px;
+    padding: 60px 60px;
+  }
+}
+
+.p-contact-form__fields {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  @include g.mq("pc") {
+  }
+}
+
+.p-contact-field {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+
+  @include g.mq("pc") {
+    flex-direction: row;
+    gap: 30px;
+    justify-content: flex-start;
+  }
+}
+
+.p-contact-field__head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  @include g.mq("pc") {
+    align-items: flex-start;
+    width: 300px;
+    justify-content: left;
+  }
+}
+
+.p-contact-form__label {
+  font-weight: bold;
+}
+
+.p-contact-form__tag {
+  font-size: 11px;
+  font-weight: bold;
+  color: g.$text-white;
+  background: g.$main-color;
+  border-radius: 2px;
+  padding: 6px 8px;
+  line-height: 1;
+  display: inline-block;
+
+  @include g.mq("pc") {
+  }
+}
+
+.p-contact-form__item {
+  @include g.mq("pc") {
+    width: 100%;
+  }
+}
+
+.p-contact-form__radio {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.p-form-radio {
+  cursor: pointer;
+}
+
+.p-form-radio__input {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+
+  &:checked + .p-form-radio__text {
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  &:focus {
+    + .p-form-radio__text {
+      &::before {
+        border-color: g.$main-color;
+      }
+    }
+  }
+}
+
+.p-form-radio__text {
+  padding-left: 34px;
+  vertical-align: middle;
+  position: relative;
+
+  @include g.mq("pc") {
+    width: 100%;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
+
+  &::before {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #111;
+    left: 0;
+    background: #fff;
+    transition: border-color 0.3s;
+  }
+
+  &::after {
+    width: 10px;
+    height: 10px;
+    background: g.$main-color;
+    left: 7px;
+    opacity: 0;
+  }
+}
+
+.p-form-text {
+  width: 100%;
+  border-radius: 5px;
+  border: 2px solid #111;
+  background: #fff;
+  box-shadow: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: #adadad;
+  padding: calc(15px - 2px) calc(16px - 2px) calc(14px - 2px);
+  transition: border-color 0.3s;
+
+  &:hover,
+  &:focus {
+    border-color: g.$main-color;
+    outline: none;
+  }
+}
+
+.p-form-textarea {
+  height: 180px;
+  border: 2px solid #111;
+  background: #fff;
+  padding: calc(16px - 2px);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 5px;
+  width: 100%;
+  resize: none; /* 右下の線(ボックスの大きさを変えられる)を消す*/
+  transition: border-color 0.3s;
+
+  &:hover,
+  &:focus {
+    border-color: g.$main-color;
+    outline: none;
+  }
+}
+
+.p-contact-form__privacy {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.p-contact-form__privacy-text {
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.p-form-checkbox {
+  cursor: pointer;
+
+  &:hover {
+    .p-form-checkbox__text {
+      &::before {
+        border-color: g.$main-color;
+      }
+    }
+  }
+}
+
+.p-form-checkbox__input {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+
+  &:checked + .p-form-checkbox__text {
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  &:focus {
+    + .p-form-checkbox__text {
+      &::before {
+        border-color: g.$main-color;
+      }
+    }
+  }
+}
+
+.p-form-checkbox__text {
+  position: relative;
+  padding-left: 30px;
+  font-size: 14px;
+  font-weight: bold;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &::before {
+    width: 20px;
+    height: 20px;
+    border-radius: 1px;
+    border: 1px solid #111;
+    transition: border-color 0.3s;
+  }
+
+  &::after {
+    width: 16px;
+    height: 16px;
+    left: 2px;
+    background: url(/assets/img/sp/privacy-check-icon.png) no-repeat center center / contain;
+    opacity: 0;
+  }
+}
+
+.p-contact-form__button {
+  text-align: center;
+}
+
+.p-contact-form__submit {
+  margin-top: 20px;
+  background: g.$btn-disable;
+  transition: background-color 0.4s;
+
+  &:hover {
+    background: g.$main-color;
+    transform: scale(1);
+  }
+
+  &.-active {
+    background: g.$main-color;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.p-contact-message {
+  display: none;
+  text-align: center;
+  margin-top: 40px;
+
+  @include g.mq("pc") {
+    font-size: 20px;
+  }
+
+  &.--error {
+    margin-top: 10px;
+    color: red;
+  }
+}

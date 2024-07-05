@@ -1,0 +1,54 @@
+// 色
+$text-black: #333; //　テキストカラー　黒
+$text-white: #fff; //　テキストカラー　白
+$main-color: #82afc8; //　メインカラー
+$base-dark: #4a4a4a; //　ベースカラー　濃い
+$base-light: #fafafa; //　ベースカラー　薄い
+// $accent-color: ; //　アクセントカラー
+$btn-disable: #707070; // disable(ボタン)
+
+// フォント
+$ff-base: "Noto Sans JP", sans-serif; //　日本語標準
+$ff-en: "Roboto", sans-serif; //　英語
+$ff-title: "Oswald", sans-serif; //  タイトル
+$fz-base: 16px; // ベースフォントサイズ
+$fw-base: 500; // ベースフォントウェイト
+$lh-base: 1.6; // ベース行間
+
+// レイアウト
+$inner-width: 1280px; // インナー幅サイズ
+$sp-width: 768px; // スマホ幅サイズ
+$header-height-sp: 80px; // スマホのヘッダー
+$header-height-pc: 90px; // PCのヘッダー
+
+// ブレークポイント
+$breakpoints: (
+  // スマホ以下の場合
+  "sp": "(max-width: #{$sp-width - 1px})",
+  // タブレット以下の場合
+  "tab": "(min-width: #{$sp-width}) and (max-width: #{$inner-width - 1px})",
+  // タブレット以上の場合
+  "pc": "screen and (min-width: #{$inner-width})"
+);
+
+// none
+// $hidden-pc: ;
+// $hidden-tab: ;
+// $hidden-sp: ;
+
+// 重なり順の定義
+$layer: (
+  // ローディング
+  loading: 300,
+  // モーダル
+  modal: 100,
+  // ドロワー
+  drawer: 40,
+  // フローティング
+  floating: 30,
+  // ヘッダー
+  header: 20,
+  // フッター
+  footer: 10,
+  default: 1
+);

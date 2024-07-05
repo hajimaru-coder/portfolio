@@ -1,0 +1,64 @@
+@use "../global" as g;
+
+.p-price {
+}
+
+.p-price-box {
+  margin-top: 30px;
+
+  @include g.mq("pc") {
+    margin-top: 60px;
+  }
+}
+
+.p-price-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+
+  @include g.mq("pc") {
+    max-width: 700px;
+    gap: 24px;
+  }
+}
+
+.p-price-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 1px 1px 4px 1px #4a4a4a;
+  border-radius: 10px;
+  background: g.$base-light;
+  padding: 20px;
+
+  @include g.mq("pc") {
+    padding: 26px 60px;
+  }
+}
+
+.p-price-item__text {
+  @include g.mq("pc") {
+    font-size: 26px;
+  }
+}
+
+.p-price-item__price {
+  font-weight: bold;
+
+  @include g.mq("pc") {
+    font-size: 26px;
+  }
+}
+
+.p-price__text {
+  margin-top: 30px;
+
+  @include g.mq("pc") {
+    // text-align: center;
+    font-size: 20px;
+  }
+}

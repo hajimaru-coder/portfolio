@@ -1,0 +1,136 @@
+@use "../global" as g;
+
+.p-works {
+}
+
+.p-works__slider {
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.swiper {
+}
+
+.p-works__swiper {
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.swiper-wrapper {
+}
+
+.swiper-slide {
+}
+
+.p-works__slide {
+  opacity: 0.3; /* 左右のスライドを薄くする */
+  transform: scale(0.8); /* 左右のスライドを小さくする */
+  transition: 0.7s; /* ゆっくり小さくさせる */
+}
+
+.p-works-item {
+}
+
+.p-works-item__img {
+  overflow: hidden;
+  border-radius: 5px;
+  img {
+    border-radius: 5px;
+    transition: transform 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.swiper-slide-active {
+  opacity: 1; /* 中央のスライドは薄くしない */
+  transform: scale(1); /* 中央のスライドは小さくしない */
+  z-index: 1; /* 中央のスライドを一番上にする */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  margin-top: 0;
+  &::after {
+    display: none;
+  }
+}
+
+.p-works-prev {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: -10px;
+  transform: translateY(-50%);
+  background: url(/assets/img/sp/prev-icon.png) no-repeat center center / contain;
+  width: 40px;
+  height: 40px;
+
+  @include g.mq("tab") {
+    left: -50px;
+  }
+
+  @include g.mq("pc") {
+    left: -50px;
+  }
+}
+
+.p-works-next {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: -10px;
+  transform: translateY(-50%);
+  background: url(/assets/img/sp/next-icon.png) no-repeat center center / contain;
+  width: 40px;
+  height: 40px;
+
+  @include g.mq("tab") {
+    right: -50px;
+  }
+
+  @include g.mq("pc") {
+    right: -50px;
+  }
+}
+
+.swiper-pagination {
+}
+
+.p-works-pagination {
+  position: absolute;
+  content: "";
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    background: g.$btn-disable;
+    opacity: 1;
+
+    &.swiper-pagination-bullet-active {
+      background: g.$main-color;
+    }
+  }
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  left: 50%;
+}
+
+.p-works-button {
+  text-align: center;
+}

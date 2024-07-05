@@ -1,0 +1,53 @@
+@use "../global" as g;
+
+.c-header-nav {
+  display: none;
+
+  @include g.mq("tab") {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+  }
+
+  @include g.mq("pc") {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+}
+
+.c-header-nav__link {
+  transition: opacity 0.3s;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  @include g.mq("tab") {
+    color: g.$text-white;
+    font-weight: bold;
+    padding: 7px 5px;
+  }
+
+  @include g.mq("pc") {
+    color: g.$text-white;
+    font-weight: bold;
+    padding: 14px 10px;
+  }
+
+  img {
+    width: 30px;
+    background: g.$text-white;
+    border-radius: 4px;
+  }
+}
+
+.c-header-nav__none {
+  @include g.mq("tab") {
+    display: none;
+  }
+
+  @include g.mq("pc") {
+    display: none;
+  }
+}
